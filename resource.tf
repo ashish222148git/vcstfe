@@ -6,15 +6,3 @@ resource "aws_instance" "web" {
   ami = "ami-00d2dbb426772b03a"
   instance_type = "t3.micro"
 }
-resource "aws_instance" "web1" {
-  ami = "ami-00d2dbb426772b03a"
-  instance_type = "t3.micro"
-}
-resource "aws_instance" "web2" {
-  ami = "ami-00d2dbb426772b03a"
-  instance_type = "t3.micro"
-}
-
-output "instance_id" {
-  value = aws_instance.web.id
-}
